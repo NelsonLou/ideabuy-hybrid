@@ -1,0 +1,489 @@
+.container {
+  padding-top: 96px;
+  width: 100vw;
+  min-height: 100vh;
+}
+
+.container .banner {
+  width: 100%;
+  height: 254px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.container .activity {
+  background: #FFF;
+}
+
+.container .activity .ac-top {
+  background: #FF8C56;
+  color: #FFF;
+  font-size: 28px;
+  padding-top: 1px;
+  padding-bottom: 1px;
+  padding-left: 2rem
+}
+
+.container .activity .ac-top .ac-title {
+  text-indent: 2rem;
+}
+
+.container .activity .ac-bottom p {
+  font-size: 28px;
+  margin-left: 2rem;
+  text-indent: 10px;
+  line-height: 2rem;
+  margin-right: 2rem;
+}
+
+.container .activity .ac-bottom p span {
+  color: #F65A45;
+}
+
+.container .activity .ac-bottom {
+  overflow: hidden;
+}
+
+.container .activity .ac-bottom .money {
+  float: right;
+  color: #F65A45;
+  font-size: 40px;
+  margin-right: 2rem;
+  margin-top: 0.5rem;
+}
+
+.container .activity .ac-bottom .money span {
+  font-size: 26px;
+}
+
+.container .navbar {
+  background: #FFF;
+  margin-top: 18px;
+}
+
+.container .navbar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.container .navbar ul li {
+  list-style: none;
+  display: inline-block;
+  width: 50%;
+  text-align: center;
+  height: 88px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #212121;
+  background: #F5F5F5;
+}
+
+.container .navbar ul .active {
+  background: #FFF;
+}
+
+.container .meal-change {
+  background: #FFF;
+}
+
+.container .meal-change ul {
+  padding-left: 2rem;
+}
+
+.container .meal-change ul li {
+  overflow: hidden;
+  list-style: none;
+  font-size: 28px;
+   padding-top: 30px;
+  padding-bottom: 28px;
+  border-bottom: 1px solid #E5E5E5;
+  color: #212121;
+}
+
+.container .meal-change ul li .mealfrDefualt {
+  color: #FF8C56;
+  float: right;
+  margin-right: 2rem;
+}
+
+.container .meal-change ul li .mealfrDefualt::after {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  transform: rotate(45deg);
+  margin-left: 20px;
+}
+
+.container .meal-change ul li .mealfrActive {
+  color: #FF8C56;
+  float: right;
+  margin-right: 2rem;
+}
+
+.container .meal-change ul li .mealfrActive::after {
+  content: '';
+  display: inline-block;
+  width: 18px;
+  height: 18px;
+  border-top: 2px solid #ccc;
+  border-right: 2px solid #ccc;
+  transform: rotate(-45deg);
+  margin-left: 20px;
+}
+
+.container .meal-change ul .open span {
+  display: inline-block;
+  border: 2px solid #999;
+  border-radius: 6px;
+  padding: 10px 18px;
+  margin-top: 1.5rem;
+  color: #999;
+  margin-right: 24px;
+  font-size: 28px;
+}
+
+.container .meal-change ul .open .active {
+  border: 2px solid #FF8C56;
+  color: #FF8C56;
+}
+
+.container .meal-change ul .activity {
+    border: none;
+}
+
+.container .meal-change ul .open p {
+  color: #999999;
+  font-size: 24px;
+  padding-bottom: 28px;
+}
+
+.container .pic {
+  margin-bottom: 4rem;
+}
+
+.container .pic img {
+    width: 100%;
+}
+
+.container .evaluate {
+  background: #FFF;
+}
+
+.container .evaluate .ev-top {
+  position: relative;
+  text-align: center;
+  font-size: 28px;
+  height: 100px;
+  line-height: 80px;
+  background: #FFF;
+  padding-bottom: 100px;
+}
+
+.container .evaluate .ev-top span {
+  display: inline-block;
+  height: 1px;
+  width: 53%;
+  background: #E5E5E5;
+}
+
+.container .evaluate .ev-top .ev-title {
+  width: 100px;
+  background: #FFF;
+  height: auto;
+  position: absolute;
+  left: 43%;
+  top: 8%;
+  color: #999999;
+}
+
+.container .evaluate .tags {
+  padding-bottom: 30px;
+  padding-left: 2rem;
+  border-bottom: 1px solid #E5E5E5
+}
+
+.container .evaluate .tags .active {
+  font-size: 28px;
+  background: #FF8C56 !important;
+  color: #FFF !important;
+}
+
+.container .evaluate .tags .all {
+  font-size: 28px;
+  background: #FFE9DF;
+  width: 102px;
+  color: #212121;
+}
+
+.container .evaluate .tags .good {
+  font-size: 28px;
+  background: #FFE9DF;
+  width: 164px;
+  color: #212121;
+}
+
+.container .evaluate .tags .bad {
+  font-size: 28px;
+  background: #EEE;
+  width: 164px;
+  color: #212121;
+}
+
+.container .evaluate .tags span {
+  text-align: center;
+  height: 58px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100px;
+  margin-right: 36px;
+  margin-top: 30px;
+}
+
+.container .evaluate .ev-statistics {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  overflow: hidden;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.container .evaluate .ev-statistics .ev-fl {
+  float: left;
+  margin-left: 2rem;
+  font-size: 28px;
+  color: #212121;
+  width: 100px;
+  line-height: 1rem;
+  padding-top: 1.3rem;
+}
+
+.container .evaluate .ev-statistics .ev-fl .percentage {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.container .evaluate .ev-statistics .ev-fr {
+  display: inline-block;
+  width: 75%;
+}
+
+.container .evaluate .ev-statistics .ev-fr ul {}
+
+.container .evaluate .ev-statistics .ev-fr ul li {
+  list-style: none;
+  margin-top: 14px;
+  position: relative;
+  padding-right: 2rem;
+}
+
+.container .evaluate .ev-statistics .ev-fr ul li span {
+  font-size: 36px;
+}
+
+.container .evaluate .ev-statistics .ev-fr ul li .ev-bg {
+  position: absolute;
+  display: inline-block;
+  background: #EEE;
+  top: 9px;
+  width: 92%;
+  height: 18px;
+  margin-left: 14px;
+  line-height: 0;
+}
+
+.container .evaluate .ev-statistics .ev-fr ul li .good-ev {
+  display: inline-block;
+  background: #F65A45;
+  height: 18px;
+}
+
+.container .evaluate .ev-statistics .ev-fr ul li .commonly-ev {
+  display: inline-block;
+  background: #FF8C56;
+  height: 18px;
+}
+
+.container .evaluate .ev-statistics .ev-fr ul li .bad-ev {
+  display: inline-block;
+  background: #7CB4d1;
+  height: 18px;
+}
+
+.container .evaluate .ev-content {
+  padding-bottom: 2rem;
+  margin-bottom: 2rem;
+}
+
+.container .evaluate .ev-content ul li {
+  list-style: none;
+  padding-top: 25px;
+  padding-bottom: 40px;
+  border-bottom: 1px solid #EEE;
+}
+
+.container .evaluate .ev-content ul li .ev-ctop {
+  position: relative;
+}
+
+.container .evaluate .ev-content ul li .ev-ctop .face {
+  width: 80px;
+  height: 80px;
+  background: #FFF;
+  border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container .evaluate .ev-content ul li .ev-ctop .face span {
+  font-size: 80px;
+  color: #FF8C56;
+}
+
+.container .evaluate .ev-content ul li .ev-ctop .text {
+  width: 85%;
+  float: right;
+  line-height: 4rem;
+}
+
+.container .evaluate .ev-content ul li .ev-ctop .tel {
+  font-size: 28px;
+  color: #212121;
+}
+
+.container .evaluate .ev-content ul li .ev-ctop .fraction {
+  font-size: 24px;
+  display: inline-block;
+  width: 88px;
+  height: 34px;
+  text-align: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  border-radius: 6px;
+  margin-left: 22px;
+  background: -webkit-linear-gradient(left, #9C9C9C, #EEE);
+  /* Safari 5.1 - 6.0 */
+  background: -o-linear-gradient(right, #9C9C9C, #EEE);
+  /* Opera 11.1 - 12.0 */
+  background: -moz-linear-gradient(right, #9C9C9C, #EEE);
+  /* Firefox 3.6 - 15 */
+  background: linear-gradient(to right, #9C9C9C, #EEE);
+  /* 标准的语法（必须放在最后） */
+}
+
+.container .evaluate .ev-content ul li .ev-ctop .star {
+  position: absolute;
+  top: 0;
+  right: 2rem;;
+}
+
+.container .evaluate .ev-content ul li .ev-ctop .star span {
+  margin-left: 8px;
+  font-size: 26px;
+}
+
+.container .evaluate .ev-content ul li .ev-ctop .ev-change p {
+  display: inline-block;
+  font-size: 24px;
+  color: #999999;
+}
+
+.container .evaluate .ev-content ul li .ev-ctop .ev-change .ev-time {
+  font-size: 24px;
+  color: #999999;
+  float: right;
+  line-height: 68px;
+  margin-right: 2rem;
+}
+
+.container .evaluate .ev-content ul li .ev-cbottom {
+  padding-right: 2rem;
+}
+
+.container .evaluate .ev-content ul li .ev-cbottom p {
+  font-size: 28px;
+  color: #212121;
+  font-weight: bold;
+  margin-top: 0.6rem;
+}
+
+.container .evaluate .ev-content ul li .ev-cbottom .top {
+  width: 0;
+  height: 0;
+  border: 10px solid;
+  border-color: transparent transparent #EAEEF7 transparent;
+  margin-left: 1rem;
+}
+.container .evaluate .ev-content ul li .ev-cbottom .content {
+  width:100%;
+  background: #EAEEF7;
+  padding-top: 20px;
+  padding-bottom: 1px;
+  padding-left: 50px;
+  padding-right: 50px;
+  border-radius: 6px;
+}
+.container .evaluate .ev-content ul li .ev-cbottom .content .reply-face {
+  display: inline-flex;
+  width: 28px;
+  height: 28px;
+  background: #FFF;
+  align-items: center;
+  justify-content: center;
+}
+.container .evaluate .ev-content ul li .ev-cbottom .content .reply-name {
+  display: inline-block;
+  font-size: 24px;
+  color: #212121;
+  margin-left: 10px;
+}
+.container .evaluate .ev-content ul li .ev-cbottom .content .reply-content {
+  font-size: 24px;
+  color: #212121;
+  line-height: 40px;
+  font-weight: normal;
+}
+.container .evaluate .ev-content ul li .ev-cbottom .content .reply-time {
+  font-size: 24px;
+  color: #999999;
+  text-align: right;
+}
+.container .submit {
+  position: fixed;
+  width: 100%;
+  background: #FFF !important;
+  padding-left: 2rem !important;
+  padding-right: 2rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  box-sizing: border-box;
+  bottom: 0;
+}
+.container .submit div {
+  max-height: 90px;
+  border: 1px solid transparent;
+}
+.icon-face-smile {
+  color: #F65A45;
+}
+.icon-face-normal {
+  color: #FF8C56;
+}
+.icon-face-bad {
+  color: #999;
+}
+.icon-star {
+  color: #FF8C56;
+}
+.icon-chinese-knot {
+  color: red;
+  font-size: 20px;
+}

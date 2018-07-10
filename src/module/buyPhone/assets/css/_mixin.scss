@@ -1,0 +1,91 @@
+  @mixin line-height($height){
+    height: $height;
+    line-height: $height;
+  }
+   
+  @mixin white_space{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+ 
+  @mixin arraw-right($height,$right){
+    position: absolute;
+    top: 0;
+    right: $right;
+    display: inline-block;
+    height: 100%;
+    font-size: 24px;
+    color: #B0B0B0 ;
+    vertical-align: middle;
+    line-height: $height;
+  }
+  @mixin layout(){
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(27,27,27,0.63);
+      height: 100%;
+      width: 100%;
+      z-index: 101;
+  }
+  
+  @mixin po_fixed($bottom,$left,$width){
+    position: fixed;
+    bottom: $bottom;
+    left: $left;
+    width: $width;
+    z-index: 10;
+  }
+  @mixin bottomBtn(){
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    background-color: #FF8D3B;
+    @include line-height(100px);
+  }
+
+  @mixin bottom($dis){
+    position: absolute;
+    bottom: $dis;
+    left: 0;
+  }
+  @mixin width_calc($width){
+    width:  calc(100% - $width);
+    width:  -webkit-calc(100% - $width);
+    width:  -moz-calc(100% - $width);
+    width:  -o-calc(100% - $width);
+  }
+
+    @mixin table_cell($height) {
+    display:table-cell;
+    width:1%;
+    text-align:center;
+    height:$height;
+    line-height:$height;
+  }
+  
+  @mixin inputInit(){
+    background-color: none;
+    background:none;
+    border: none;
+    border: none
+  }
+
+  @mixin po_center($width,$height){
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: - $width/2;
+    margin-top: - $height/2;
+  }
+  *{
+    font-size: 28px;
+    font-family: 'Microsoft YaHei';
+  }
+  p, dl, dt{
+    margin:0;
+  }

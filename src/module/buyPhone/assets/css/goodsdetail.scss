@@ -1,0 +1,596 @@
+  @import 'mixin';
+
+  *{
+    font-size: 28px;
+    color: #212121;
+  }
+  .ver{
+    vertical-align: top;
+    line-height: 80px;
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+  }
+  .specialbox{
+    border-color: #FF8D3B !important;
+  }
+  .container {
+    background-color: #eee;
+    padding-top: 96px;
+    .banner{
+      position: relative;
+      .swiper{
+        width: 100%;
+        height: 395px;
+        line-height: 395px;
+        background-color: #fff;
+        .swiper-item{
+          vertical-align: middle;
+          text-align: center;
+          &> img{
+            vertical-align: middle;
+          }
+        }
+      }
+      .page{
+          position: absolute;
+          bottom: 20px;
+          left: 0;
+          width: 100%;
+          text-align: center;
+        .activePage{
+          display:inline-block;
+          width:15px;
+          height: 15px;
+          background-color:#eee;
+          border-radius: 50%;
+        }
+      }
+    }
+    .goodsinfo{
+      width: 100%;
+      background-color: #fff;
+      .infobox{
+        padding: 38px 46px 0 40px;
+        .title{
+          margin: 0;
+          line-height: 38px;
+          color: #212121;
+        }
+        .special{
+          color: #DF1F1F;
+        }
+        .price{
+          margin-top: 34px;
+          padding-bottom: 34px;
+          text-align: right;
+          color: #F65A44;
+          font-size: 24px;
+          & span{
+            font-size: 36px;
+            color: #F65A44;
+          }
+        }
+      }
+    }
+    .typeinfo{
+      margin-top: 20px;
+      background-color: #fff;
+      .typebox{
+        padding-left: 43px;
+        .infoline{
+          position: relative;
+          @include line-height(88px);
+          border-bottom: 1px solid #e5e5e5;
+          .more{
+            position: absolute;
+            right: 0;
+            display:inline-block;
+            margin-right: 41px;
+            @include line-height(88px);
+            color: #b0b0b0;
+            font-size: 24px;
+            vertical-align: middle;
+          }
+          .lasttype{
+            display: inline-block;
+            width: 60%;
+            text-align: right;
+            white-space: nowrap;
+            text-overflow:ellipsis;
+            overflow: hidden;
+          }
+        }
+        .Instock{
+          display: inline-block;
+          float: right;
+          margin-right: 41px;
+          .isstock{
+            color: #49CA26;
+            margin-right: 20px;
+          }
+        }
+        .infoline:last-child{
+          border: none
+        }
+      }
+    }
+    /* 手机配置 */
+    .typedetail{
+      @include layout();
+      .bottomBtn{
+        @include bottomBtn();
+        &> span{
+          color: #fff;
+        }
+      }
+      .selectResult{
+        @include bottom(100px);
+        width: 100%;
+        background-color: #fff;
+        padding: 38px 0px 40px 42px;
+        .proselect{
+           line-height: 34.5px;
+           padding-bottom: 38px;
+           border-bottom: 1px solid #e5e5e5;
+        }
+        .typeline{
+          padding-bottom: 15px;
+          &>div{
+            padding:0px 0 36px 0;
+            border-bottom: 1px solid #e5e5e5;
+          }
+          .typename{
+            color: #8c8c8c;
+            margin:0;
+          }
+          .typetips {
+            text-align: left;
+            span{
+              position: relative;
+              display: inline-flex;
+              border: 1px solid #e5e5e5;
+              text-align: center;
+              margin: 19px 5.5px 0 5.5px;
+              color: #212121;
+              border-radius: 5px;
+              // @include line-height(60px);
+              height: 60px;
+              align-items: center;
+              justify-content: center;
+            }
+          }
+        }
+      }      
+    }
+    /* 手机参数*/ 
+    .mobileParams{
+      @include layout();
+      .ParamsList{
+        @include bottom(100px);
+        width: 100%;
+        background-color: #fff;
+        padding: 38px 0px 0px 42px;
+      }
+      .paramsline{
+        line-height: 95px;
+        min-height: 100px;
+        // padding-left: 39px;
+        border-bottom: 1px solid #dcdcdc;
+        &> label{
+          display: inline-block;
+          vertical-align: middle;
+          width: 160px;
+          color: #999;
+        }
+        & > span {
+          display: inline-block;
+          line-height: 34px;
+          width: calc(100% - 200px);
+          margin-left: 40px;
+          vertical-align: middle;
+        }
+      }
+      .paramsline:last-child{
+        border-bottom:none;
+      }
+      .bottomBtn{
+        @include bottomBtn();
+        &> span{
+          color: #fff;
+        }
+      }
+    }
+    /* 商品详情*/ 
+    .goods{
+      margin-top: 20px;
+      background-color: #fff;
+      .top{
+        position: relative;
+        @include line-height(88px);
+        text-align: center;
+        background-color: #fff;
+        .text{
+          position: relative;
+          @include line-height(88px);
+          z-index: 2;
+          background-color: #fff;
+        }
+        .throughline{
+          display: inline-block;
+          width: 77.3%;
+          position: absolute;
+          top: 50%;
+          background-color: #e5e5e5;
+          height: 1px;
+          margin-top: 1px;
+          left: 50%;
+          margin-left: -38.65%;
+        }
+        .arc{
+          display: inline-block;
+          width: 15px;
+          height: 15px;
+          vertical-align:middle;
+          border-radius: 50%;
+          background-color: #fff;
+          border: 1px solid #c5c5c5;
+        }
+      }
+      .detail{
+        padding-bottom: 130px;
+      }
+      .comments{
+        .top{
+          width: 80%;
+          margin: 0 auto;
+          .text{
+            padding: 0 40px;
+          }
+        }
+      }
+    }
+    /*购买*/
+    .buybox{
+      @include po_fixed(0px,0px,100%);
+      @include line-height(124px);
+      background-color:#fff;
+      padding: 0 20px;
+      text-align: center;
+      .buybtn{
+        display: inline-flex;
+        width: calc(50% - 25px);
+        // @include line-height(80px);
+        height: 80px;
+        margin: 0 10px;
+        text-align: center;
+        color: #fff;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+      }
+      .new{
+        background-color:#3978D7;
+      }
+      .old{
+        background-color: #FF8C56;
+      }
+    } 
+  }
+  .checked{
+    position: absolute;
+    right:0;
+    bottom:-1px;
+    width: 49px;
+    height: 34px;
+    z-index: 11;
+    text-indent: 0;
+    img{
+      width: 100%;
+    }
+  }
+  // @media screen and (max-width: 320px){
+  //   .lasttype{
+  //     width: 45% !important;
+  //   }
+  // }
+
+  .container .comments {
+    background: #FFF;
+  }
+
+  .container .comments .ev-top {
+    position: relative;
+    text-align: center;
+    font-size: 28px;
+    height: 100px;
+    line-height: 80px;
+    background: #EEE;
+    padding-bottom: 100px;
+  }
+
+  .container .comments .ev-top span {
+    display: inline-block;
+    height: 2px;
+    width: 430px;
+    background: #E5E5E5;
+  }
+
+  .container .comments .ev-top .ev-title {
+    width: 100px;
+    background: #EEE;
+    height: auto;
+    position: absolute;
+    left: 43%;
+    top: 8%;
+    color: #999999;
+  }
+
+  .container .comments .tags {
+    padding-bottom: 30px;
+    padding-left: 2rem;
+    border-bottom: 1px solid #E5E5E5
+  }
+
+  .container .comments .tags .all {
+    font-size: 28px;
+    background: #FF8C56;
+    width: 102px;
+    color: #FFF;
+  }
+
+  .container .comments .tags .good {
+    font-size: 28px;
+    background: #FFE9DF;
+    width: 164px;
+    color: #212121;
+  }
+
+  .container .comments .tags .bad {
+    font-size: 28px;
+    background: #EEE;
+    width: 164px;
+    color: #212121;
+  }
+
+  .container .comments .tags span {
+    text-align: center;
+    height: 58px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+    margin-right: 36px;
+    margin-top: 30px;
+  }
+
+  .container .comments .ev-statistics {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    overflow: hidden;
+    border-bottom: 1px solid #E5E5E5;
+    height: 234px;
+  }
+
+  .container .comments .ev-statistics .ev-fl {
+    // float: left;
+    margin-left: 2rem;
+    font-size: 28px;
+    color: #212121;
+    width: 100px;
+    display: inline-block;
+    height: 100%;
+    vertical-align: top;
+    // line-height: 1rem;
+    // padding-top: 1.3rem;
+  }  
+
+  .container .comments .ev-statistics .ev-fl p:first-child{
+    padding-top: 68px;
+  }
+
+  .container .comments .ev-statistics .ev-fl .percentage {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .container .comments .ev-statistics .ev-fr {
+    display: inline-block;
+    width: 75%;
+  }
+
+  .container .comments .ev-statistics .ev-fr ul {}
+
+  .container .comments .ev-statistics .ev-fr ul li {
+    list-style: none;
+    margin-top: 14px;
+    position: relative;
+    padding-right: 2rem;
+  }
+
+  .container .comments .ev-statistics .ev-fr ul li span {
+    font-size: 36px;
+  }
+
+  .container .comments .ev-statistics .ev-fr ul li .ev-bg {
+    position: absolute;
+    display: inline-block;
+    background: #EEE;
+    top: 9px;
+    width: 92%;
+    height: 18px;
+    line-height: 18px;
+    margin-left: 14px;
+  }
+
+  .container .comments .ev-statistics .ev-fr ul li .good-ev {
+    display: inline-block;
+    background: #F65A45;
+    height: 18px;
+  }
+
+  .container .comments .ev-statistics .ev-fr ul li .commonly-ev {
+    display: inline-block;
+    background: #FF8C56;
+    height: 18px;
+  }
+
+  .container .comments .ev-statistics .ev-fr ul li .bad-ev {
+    display: inline-block;
+    background: #7CB4d1;
+    height: 18px;
+  }
+
+  .container .comments .ev-content {
+    padding-bottom: 100px;
+  }
+
+  .container .comments .ev-content ul li {
+    list-style: none;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid #EEE;
+  }
+  
+  .container .comments .ev-content ul li:last-child{
+    border-bottom: none
+  }
+
+  .container .comments .ev-content ul li .ev-ctop {
+    position: relative;
+  }
+
+  .container .comments .ev-content ul li .ev-ctop .face {
+    width: 80px;
+    height: 80px;
+    background: #FFF;
+    border-radius: 100px;
+    // float: left;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .container .comments .ev-content ul li .ev-ctop .face span {
+    font-size: 80px;
+    color: #FF8C56;
+  }
+
+  .container .comments .ev-content ul li .ev-ctop .text {
+    width: 85%;
+    float: right;
+    line-height: 4rem;
+  }
+
+  .container .comments .ev-content ul li .ev-ctop .tel {
+    font-size: 28px;
+    color: #212121;
+  }
+
+  .container .comments .ev-content ul li .ev-ctop .fraction {
+    font-size: 24px;
+    display: inline-block;
+    width: 88px;
+    height: 34px;
+    text-align: center;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    border-radius: 6px;
+    margin-left: 22px;
+    background: -webkit-linear-gradient(left, #9C9C9C, #EEE);
+    /* Safari 5.1 - 6.0 */
+    background: -o-linear-gradient(right, #9C9C9C, #EEE);
+    /* Opera 11.1 - 12.0 */
+    background: -moz-linear-gradient(right, #9C9C9C, #EEE);
+    /* Firefox 3.6 - 15 */
+    background: linear-gradient(to right, #9C9C9C, #EEE);
+    /* 标准的语法（必须放在最后） */
+  }
+
+  .container .comments .ev-content ul li .ev-ctop .star {
+    position: absolute;
+    top: 0;
+    right: 2rem;;
+  }
+
+  .container .comments .ev-content ul li .ev-ctop .star span {
+    margin-left: 8px;
+    font-size: 26px;
+    color: #FF8C56;
+  }
+
+  .container .comments .ev-content ul li .ev-ctop .ev-change p {
+    margin: 15px 0 10px 0;
+    display: inline-block;
+    font-size: 24px;
+    color: #999999;
+    text-align: left;
+  }
+
+  .container .comments .ev-content ul li .ev-ctop .ev-change .ev-time {
+    font-size: 24px;
+    color: #999999;
+    float: right;
+    line-height: 52px;
+    margin-right: 2rem;
+  }
+
+  .container .comments .ev-content ul li .ev-cbottom {
+    padding-right: 2rem;
+  }
+
+  .container .comments .ev-content ul li .ev-cbottom p {
+    font-size: 28px;
+    color: #212121;
+    font-weight: bold;
+    // margin-top: 0.6rem;
+    margin: 10px 0;
+  }
+
+  .container .comments .ev-content ul li .ev-cbottom .top {
+    width: 0;
+    height: 0;
+    border: 10px solid;
+    border-color: transparent transparent #EAEEF7 transparent;
+    margin-left: 1rem;
+  }
+  .container .comments .ev-content ul li .ev-cbottom .content {
+    width:100%;
+    background: #EAEEF7;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    border-radius: 6px;
+  }
+  .container .comments .ev-content ul li .ev-cbottom .content .reply-face {
+    display: inline-flex;
+    width: 28px;
+    height: 28px;
+    background: #FFF;
+    align-items: center;
+    justify-content: center;
+    
+    &> span{
+      color: red;
+    }
+  }
+  .container .comments .ev-content ul li .ev-cbottom .content .reply-name {
+    display: inline-block;
+    font-size: 24px;
+    color: #212121;
+    margin-left: 10px;
+  }
+  .container .comments .ev-content ul li .ev-cbottom .content .reply-content {
+    font-size: 24px;
+    color: #212121;
+    line-height: 40px;
+    font-weight: normal;
+  }
+  .container .comments .ev-content ul li .ev-cbottom .content .reply-time {
+    font-size: 24px;
+    color: #999999;
+    text-align: right;
+  }
